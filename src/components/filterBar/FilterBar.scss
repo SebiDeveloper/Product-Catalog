@@ -1,0 +1,20 @@
+.filter-bar {
+    margin-bottom: 2rem;
+    &__button {
+      margin-right: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      &:hover {
+        background-color: #444;
+      }
+      &--active {
+        font-weight: bold;
+        background-color: #555;
+      }
+    }
+  }

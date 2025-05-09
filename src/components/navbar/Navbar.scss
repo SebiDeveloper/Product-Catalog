@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    &__link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: opacity 0.2s ease;
+      &:hover {
+        opacity: 0.8;
+      }
+      &--logo {
+        font-weight: bold;
+        &:hover {
+          color: #fff;
+          font-size: 1.2rem;
+          transition: all 0.2s ease;
+        }
+      }
+      &--cart {
+        font-size: 1.4rem;
+      }
+    }
+  }
