@@ -1,7 +1,16 @@
 import { Link } from 'react-router-dom';
 import './ProductCard.scss';
 
-const ProductCard = ({ product }) => {
+interface Product {
+  id: number | string;
+  title: string;
+  price: number;
+  image: string;
+};
+
+type ProductCardProps = { product: Product };
+
+const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <div className="product-card">
       <img
